@@ -1,12 +1,84 @@
 @import "node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
 
-$red: red;
 
-h1 {
-    color: $red;
+.header {
+    background-color: #EBEBEB;
+    .container {
+        margin-left: 254px;
+        padding: 0;
+    }
+    .row {
+        font-family: 'New Rocker', cursive;
+        font-size: 22.08px;
+        margin: 0;
+        padding: 15px 0 16px 0;
+    }
 }
 
-.row {
-    background-color: #EBEBEB;
+.col-md-2 {
+    align-self: center;
+    padding: 0;
+}
+
+.offset-md-1 {
+ margin-left: 161px;
+}
+
+.content {
+    background-image: url(../../img/monkeys.jpg);
+}
+
+.first-content {
+    display: flex;
+    justify-content: center;
+    .meet {
+        position: relative;
+        padding-left: 42.64px;
+        margin-top: 94px;
+        background: linear-gradient(180deg, #FF910F 0%, #F2D227 69.27%);
+        width: 365.63px;
+        height: 93.81px;
+        z-index: 0;
+    }
+    .meet2 {
+        position:absolute;
+        padding-left: 42.64px;
+        width: 365.63px;
+        height: 108px;
+        background:#CE6111;
+        z-index: 2;
+        top: 0px;
+        left: 6px;
+        mix-blend-mode: overlay;
+    >p {
+
+        color: white;
+    }
+
+    }
+    & p {
+        font-family: 'New Rocker', cursive;
+        font-size: 76.75px;
+        line-height: 90.13px;
+        margin: 0;
+    }
+
+
+}   
+
+
+.block {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.block_2 {
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background:green;
 }
 
