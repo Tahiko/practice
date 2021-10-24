@@ -42,7 +42,7 @@ function serve() {
     })
 
     watch('src/**.html', series(html)).on('change', sync.reload)
-    watch('src/scss/**.html', series(scss)).on('change', sync.reload)
+    watch('src/scss/**.scss', series(scss)).on('change', sync.reload)
 }
 
 exports.build = series(clear,scss,html)
