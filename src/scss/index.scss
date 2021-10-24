@@ -1,1 +1,12 @@
 @import "node_modules/bootstrap/scss/bootstrap";
+
+$red: red;
+
+h1 {
+    color: $red;
+}
+
+.row {
+    background-color: $red;
+}
+

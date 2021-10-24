@@ -1,4 +1,4 @@
-const {src,dest,series, watch} = require('gulp')
+const {src,dest,series,watch} = require('gulp')
 const csso = require ('gulp-csso')
 const include = require('gulp-file-include')
 const htmlmin = require('gulp-htmlmin')
@@ -7,6 +7,7 @@ const concat = require('gulp-concat')
 const autoprefixer = require('gulp-autoprefixer')
 const sync = require('browser-sync').create()
 const sass = require('gulp-sass')(require('sass'))
+
 
 function html() {
     return src('src/**.html')
@@ -40,13 +41,15 @@ function serve() {
         server: './dist'
     })
 
-    watch('src/**.html', series(html)).on('change',sync.reload)
-    watch('src/scss/**.scss', series(scss).on('change',sync.reload))
+    watch('src/**.html', series(html)).on('change', sync.reload)
+    watch('src/scss/**.html', series(scss)).on('change', sync.reload)
 }
 
 exports.build = series(clear,scss,html)
 exports.serve = series(clear,scss,html,serve)
-exports.html = html;
+exports.clear = clear
+exports.html = html
+exports.scss = scss
 
 
 
