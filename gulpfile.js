@@ -9,6 +9,7 @@ const sync = require('browser-sync').create()
 const sass = require('gulp-sass')(require('sass'))
 // const imagemin = require('gulp-imagemin')
 const image = require('gulp-image');
+const uglify = require('gulp-uglify');
 
 
 function html() {
@@ -44,6 +45,13 @@ function fotochka() {
         .pipe(dest('dist/images'))
 }
 
+function jsik() {
+    return src ('src/js/**.js')
+    .pipe(concat('scripts.js'))
+    .pipe(uglify())
+    .pipe(dest('dist/js'))
+}
+
 
 function serve() {
     sync.init({
@@ -53,13 +61,15 @@ function serve() {
     watch('src/**.html', series(html)).on('change', sync.reload)
     watch('src/scss/**.scss', series(scss)).on('change', sync.reload)
     watch('img/*',series(fotochka)).on('change',sync.reload)
+    watch('src/js/**.js',series(jsik)).on('change',sync.reload)
 }
 
-exports.build = series(clear,scss,html,fotochka)
-exports.serve = series(clear,scss,html,fotochka,serve)
+exports.build = series(clear,scss,html,fotochka,jsik)
+exports.serve = series(clear,scss,html,fotochka,jsik,serve)
 exports.clear = clear
 exports.html = html
 exports.scss = scss
+
 
 
 

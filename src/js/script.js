@@ -1,0 +1,1 @@
+new swiper('.swiper-container');

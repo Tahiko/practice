@@ -81,5 +81,137 @@
     }
 
 
-}   
+}
+
+.bored-ap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'New Rocker', cursive;
+    margin-top: 24.19px;
+
+    & p {
+        color: white;
+        font-size: 98.8402px;
+        line-height: 116px;
+    }
+}
+
+.new {
+    display: flex;
+    justify-content: right;
+}
+
+.new-nft {
+    display: flex;
+    position: relative;
+    font-family: 'New Rocker', cursive;
+    padding-right: 299px;
+    & >p {
+        font-size: 75.55px;
+        line-height: 88.72px;
+        color: white;
+    }
+
+    .drop_1 {
+        position:absolute;
+        left: 245px;
+        top: -45px;
+        transform: rotate(16.47deg);
+        > p {
+            font-size: 59.72px;
+            line-height: 59.72px;
+        }
+    }
+
+    .drop_2 {
+        position: absolute;
+        top: 0px;
+        left: -4px;
+    
+        > p {
+            font-size: 59.72px;
+            line-height: 59.72px;
+            color:#FF097F;
+        }
+    }
+}
+
+.content-block-wrapper {
+    .container {
+        margin: 0 auto;
+        > hr {
+            margin: 0;
+            margin-top: 72px;
+            color: #C4C4C4;
+            height: 9px;
+        }
+
+    }
+    .row-between {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-top: 61px;
+    > h1 {
+        color: white;
+        font-size: 45.04px;
+        line-height: 52.89px;
+        font-family: 'New Rocker', cursive;
+    }
+    }
+    .swiper-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height: 197px;
+        border: 6.55167px solid #F2D227;
+        box-sizing: border-box;
+    }
+}
+
+.swiper-wrapper {
+    margin-left: 128px;
+    .swiper-slide {
+        width: 188.97px;
+        height: 188.97px;
+    }
+}
+
+.contact-us {
+    position: relative;
+    hr {
+        margin:0;
+        color: black;
+        height: 9px;
+    }
+
+    .messages {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(180deg, #F2D227 0%, #FF910F 100%);
+        font-family: 'New Rocker', cursive;
+    }
+
+    .left {
+        > p {
+            font-size: 44px;
+            line-height: 51.67px;
+            margin-left: 7px;
+        }
+    }
+
+    .right {
+        > p {
+            font-size: 33px;
+            line-height: 38.75px;
+            margin-right: 17px;
+        }
+    }
+}
+
+
 
