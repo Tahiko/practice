@@ -1,1 +1,1 @@
-new swiper(".swiper-container");
+var swiper=new Swiper(".swiper",{slidesPerView:6,direction:"horizontal",loop:!1});
