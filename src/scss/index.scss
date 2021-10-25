@@ -213,5 +213,45 @@
     }
 }
 
+.content-first-message {
+    margin-top: 197px;
+    .container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .yellowround {
+        position: relative;
+        background:linear-gradient(180deg, #F2D227 0%, #FF910F 100%);
+        border: 4.20806px solid #000000;
+    }
+
+    .right-message {
+        .message {
+            position: relative;
+            width: 35%;
+            > p {
+                font-size: 17.43px;
+                line-height: 20.47px;
+                background: white;
+                font-family: 'New Rocker', cursive;
+            }
+        }
+    }
+}
+.blackround {
+    display: flex;
+    justify-content: center;
+    background: black;
+    > p {
+        margin: 0;
+        color: white;
+        font-family: 'New Rocker', cursive;
+        font-size: 17.43px;
+        line-height: 20.47px;
+    }
+}
+
 
 
