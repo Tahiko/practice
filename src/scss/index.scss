@@ -35,7 +35,7 @@
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.808) 15.63%, rgba(213, 213, 213, 0) 49.39%, rgba(0, 0, 0, 0.808) 85.42%); 
     height: inherit;
     width: 100%;
-    mix-blend-mode: multiply;
+    mix-blend-mode: color-burn;
 }
 
 .gradient_2 {
