@@ -56,32 +56,25 @@
         width: 365.63px;
         height: 93.81px;
         z-index: 0;
+        box-shadow: 6.4px 11.19px 0 0 #CE6111;;
     }
-    .meet2 {
-        position:absolute;
-        padding-left: 42.64px;
-        width: 365.63px;
-        height: 108px;
-        background:#CE6111;
-        z-index: 2;
-        top: 0px;
-        left: 6px;
-        mix-blend-mode: overlay;
-    >p {
-
-        color: white;
-    }
-
-    }
+ 
     & p {
         font-family: 'New Rocker', cursive;
         font-size: 76.75px;
         line-height: 90.13px;
         margin: 0;
+        text-shadow: 1px 0px 0 #eee892,
+        2px 0px 0 #eee892,
+        3px 0px 0 #eee892,
+        4px 0px 0 #eee892,
+        5px 0px 0 #eee892,
+        6px 0px 0 #eee892,
+        7px 0px 0 #eee892;
     }
-
-
 }
+
+
 
 .bored-ap {
     position: relative;
@@ -107,7 +100,7 @@
     display: flex;
     position: relative;
     font-family: 'New Rocker', cursive;
-    padding-right: 299px;
+    justify-content: flex-end;
     & >p {
         font-size: 75.55px;
         line-height: 88.72px;
@@ -116,24 +109,20 @@
 
     .drop_1 {
         position:absolute;
-        left: 245px;
-        top: -45px;
+        top: -50px;
+        right: -50px;
         transform: rotate(16.47deg);
         > p {
             font-size: 59.72px;
             line-height: 59.72px;
-        }
-    }
-
-    .drop_2 {
-        position: absolute;
-        top: 0px;
-        left: -4px;
-    
-        > p {
-            font-size: 59.72px;
-            line-height: 59.72px;
             color:#FF097F;
+            text-shadow: 1px 0px 0 black,
+            2px 0px 0 black,
+            3px 0px 0 black,
+            4px 0px 0 black,
+            5px 0px 0 black,
+            6px 0px 0 black,
+            7px 0px 0 black;
         }
     }
 }
@@ -225,6 +214,7 @@
         position: relative;
         background:linear-gradient(180deg, #F2D227 0%, #FF910F 100%);
         border: 4.20806px solid #000000;
+        box-shadow: 0 -7.21px #C4C4C4;
     }
 
     .right-message {
@@ -256,18 +246,16 @@
 }
 
 .monkeys-umbrella-gag {
-    position: absolute;
-    left: 1100px;
+display: flex;
+justify-content: right;
+position: relative;
     .monkey {
         position: absolute;
-        left: -140px;
-        top: 80px;
     }
 
     .umbrella {
         position: absolute;
         top: -130px;
-        left: 70px;
     }
 }
 
